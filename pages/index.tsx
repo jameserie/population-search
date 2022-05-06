@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import Select from "react-select";
 import { Modal } from "react-responsive-modal";
 import { useStore } from "../store/useStore";
+import SearchGraphic from "../public/undraw_web_search_re_efla.svg";
 
 type SelectList = {
   label: string;
@@ -53,8 +55,16 @@ const Home: NextPage = ({ data }: any) => {
         </Head>
 
         <div className="my-20">
-          <div className="text-2xl mb-2">
-            Search United States population by year:
+          <div className="flex items-center justify-center my-5">
+            <Image
+              src={SearchGraphic.src}
+              width={500}
+              height={300}
+              alt="Search for Population"
+            />
+          </div>
+          <div className="text-4xl mb-2 text-center font-bold">
+            United State Population Finder
           </div>
           <Select
             value={selectedYear}

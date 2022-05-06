@@ -15,10 +15,10 @@ const Year = () => {
   return (
     <>
       <Head>
-        <title>United States Population</title>
+        <title>{year} | United States Population</title>
         <meta
           name="description"
-          content="A simple app that lets you find population in united states by year."
+          content={`United States population for year ${year}`}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
