@@ -1,16 +1,13 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "react-responsive-modal/styles.css";
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply bg-slate-500;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.btn-default {
+  @apply border border-gray-200 rounded-lg px-5 py-2 shadow-md;
 }
