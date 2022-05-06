@@ -64,7 +64,7 @@ const Home: NextPage = ({ data }: any) => {
             />
           </div>
           <div className="text-4xl mb-2 text-center font-bold">
-            United State Population Finder
+            United States Population Finder
           </div>
           <Select
             value={selectedYear}
