@@ -89,7 +89,7 @@ export default Home;
 
 export async function getServerSideProps() {
   try {
-    const locationApi = "http://localhost:3000/api/us-population";
+    const locationApi = `${process.env.API_URL}/us-population`;
     const response = await fetch(locationApi);
     const data = await response.json();
 
